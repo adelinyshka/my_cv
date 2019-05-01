@@ -1,0 +1,28 @@
+//- впишите необходимые данные в переменные vars
+block vars
+	- var title2= 'Дубинникова Адель';
+	- var description2= 'Адель Дубинникова, Frontend Developer';
+	- var charset2= 'UTF-8'
+	- var keywords2= 'frontend developer';
+	- var stylesheet2= 'template.css.scss'
+
+doctype html
+html(lang='ru')
+	head
+		meta(charset=charset2)
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(http-equiv='X-UA-Compatible', content='ie=edge')
+		meta(name='description' content=description2)
+		meta(name='keywords' content =keywords2)
+		title #{title2}
+		link(rel='stylesheet', href=stylesheet2)
+		link(href='../css/bootstrap.min.css', rel='stylesheet')
+		link(href='./css/css.css', rel='stylesheet')
+		link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css')
+		link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css')
+		script(src='https://wubook.net/js/wblib.jgz')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+
+	body
+		block content
+
