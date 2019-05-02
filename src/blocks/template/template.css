@@ -3,6 +3,7 @@
 body {
     font: normal 16px/1.1 sans-serif;
     color: black;
+    background: url('linedpaper.png');
 }
 
 .h1_text_small {

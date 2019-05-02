@@ -4,13 +4,12 @@
 		.row.align-items-center.justify-content-center
 			.col-auto
 				.pic_round.mb-4.m-3.hello
-			.col-auto
-				ul.list-unstyled.text-left
-					li.p-1.p-md-2.btn-info.m-2.btn
-						a.text-white(href='https://t.me/adel_dubinnikova') Telegram
-					li.p-1.p-md-2.btn-info.m-2.btn
-						a.text-white(href='https://github.com/adelinyshka') GitHub
-					li.p-1.p-md-2.btn-info.m-2.btn
-						a.text-white(href='https://www.linkedin.com/in/adel-dubinnikova/') LinkedIn
-					li.p-1.p-md-2.btn-info.m-2.btn
-						a.text-white(href='https://vk.com/dubinnikova_adel') VK
+			.col-auto.text-center
+				a(href='https://t.me/adel_dubinnikova').contacts__icons--hover
+					img(src=require('../contacts/__icons/telegram.png')).p-2
+				a(href='https://vk.com/dubinnikova_adel').contacts__icons--hover
+					img(src=require('../contacts/__icons/vk.png')).p-2
+				a(href='https://github.com/adelinyshka').contacts__icons--hover
+					img(src=require('../contacts/__icons/github.png')).p-2.contacts__icons--hover
+				a(href='https://www.linkedin.com/in/adel-dubinnikova/').contacts__icons--hover
+					img(src=require('../contacts/__icons/linkedin.png')).p-2
