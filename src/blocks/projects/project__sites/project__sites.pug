@@ -1,28 +1,15 @@
 - var technology= 'Технологии: '
 - var made_when= 'Дата создания: '
-// - var site= 'Сайт: '
 
 mixin sites(title, text, techno, made, srcs)
 
 	.m-2
-		.card.project__sites--card-style.m-2
+		.card.project__sites--card-style.m-2.hoper.projects__card-body--style
 			.card-body
 				h5.card-title= title
 				p.card-text= text
-			ul.list-group.list-group-flush
-				li.list-group-item= technology+techno
-				li.list-group-item= made_when+made
+			ul.list-group.list-group-flush.hoper
+				li.list-group-item.hoper= technology+techno
+				li.list-group-item.hoper= made_when+made
 			.card-body.text-center
 				a.card-link.btn.btn-info(href= srcs) Посмотреть сайт
-
-	//
-	//
-	//.card.border-info
-	//	img.card-img-top.border-bottom.border-info(alt='апарт-отель северный', src='site_hotel.jpg')
-	//	.card-body
-	//		h5.card-title
-	//			a(href='http://xn--78-mlcyny6e.xn--p1ai/') Сайт: гостиница "Дуэт"
-	//		p.card-text
-	//			| Сделан на заказ с нуля, включая ТЗ, прототип, дизайн, верстку и функциональность.
-	//	.card-footer
-	//		small.text-muted Bootstrap + PHP + JavaScript + jQuery
